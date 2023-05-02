@@ -214,4 +214,4 @@ class Authenticator {
   }
 }
 
-export default Authenticator
+export { Authenticator }
