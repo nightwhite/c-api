@@ -1,33 +1,23 @@
 {
-  "name": "claude-api",
-  "version": "1.0.3-test-6",
+  "name": "claude-api-slack",
+  "version": "1.0.28",
   "description": "slack Authentication Library for ClaudeAI.",
-  "main": "index.js",
+  "main": "build/index.js",
   "scripts": {
     "build": "tsup",
-    "dev": "tsup --watch",
-    "clean": "del build",
-    "prebuild": "npm run clean",
-    "predev": "npm run clean"
+    "pub": "npm publish --access public"
   },
-  "author": "bincooo",
+  "author": "NightWhite",
   "license": "MIT",
-  "exports": {
-    ".": {
-      "import": "./build/index.js",
-      "types": "./build/index.d.ts",
-      "default": "./build/index.js"
-    }
-  },
   "files": [
     "build"
   ],
   "type": "module",
   "source": "./src/index.ts",
-  "types": "./build/index.d.ts",
+  "types": "build/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bincooo/claude-api.git"
+    "url": "git+https://github.com/nightwhite/claude-api"
   },
   "devDependencies": {
     "@types/node": "14.18.36",
@@ -43,10 +33,7 @@
     "uuid": "^9.0.0",
     "p-timeout": "^6.0.0"
   },
-  "bugs": {
-    "url": "https://github.com/bincooo/claude-api/issues"
-  },
-  "homepage": "https://github.com/bincooo/claude-api#readme",
+  "homepage": "https://github.com/nightwhite/claude-api#readme",
   "keywords": [
     "ai",
     "claude",
